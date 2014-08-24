@@ -37,4 +37,4 @@ set = cbind(set, subject)
 tidy_set = ddply(set, c("SubjectID", "ActivityName"), function (x) colMeans(x[1:(length(set)-3)]))
 # Write tidy_set data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset 
 # directly into the text box, as this may cause errors saving your submission).
-write.table(tidy_set, "tidydata.txt", row.names=FALSE)
+write.table(tidy_set, "average-measurement-data.txt", row.names=FALSE)
